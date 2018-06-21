@@ -1,0 +1,22 @@
+<?php 
+return [
+'home'=>'首页',
+'aboutus'=>'关于我们',
+'history'=>'发展里程',
+'service'=>'售后服务',
+'customer'=>'合作客户',
+'contactus'=>'联系我们',
+'history'=>'发展里程',
+'product'=>'产品展示',
+'support'=>'技术支援',
+'findmore'=>'查看更多产品',
+'downfile'=>'文件下载',
+'downsupport'=>'技术支持',
+'downshort'=>'文件简介',
+'download'=>'点这里下载',		
+'prev'=>'上一篇',
+'next'=>'下一篇',
+'custservice'=>'定制化服务',
+'servicetxt'=>'提供智能化，个性化，定制化的精准服务',
+];
+?>

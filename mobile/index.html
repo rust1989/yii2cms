@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>神州科技有限公司</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="public/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="public/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+    <script src="public/js/jquery.min.js"></script>
+</head>
+<body>
+   <div class="web">
+         <div class="header">
+               <div class="title">神州科技有限公司</div>
+               <dvi class="navbtn"><i class="fa fa-reorder"></i></dvi>
+         </div>
+         <div class="navs">
+              <div class="nav">
+                  <a href="index.html">
+                      <div class="icon"><i class="fa fa-home"></i></div>
+                      <div class="txt">首页</div>
+                  </a>
+              </div>
+             <div class="nav">
+                 <div class="icon"><i class="fa fa-users"></i></div>
+                 <div class="txt">关于我们</div>
+             </div>
+             <div class="nav">
+                 <a href="product.html">产品展示</a>
+             </div>
+             <div class="nav">
+                 <a href="support.html">技术支援</a>
+             </div>
+         </div>
+         <div class="main">
+             <div class="banners">
+                 <div class="banner"><a href="javascript:void(0);"><img src="public/img/banner.jpg" class="wid100" /> </a></div>
+             </div>
+         </div>
+         <div class="footer">
+               <div class="btnavs">
+                     <div class="btnav"><a href="javascript:void(0);">信息咨询</a> </div>
+                     <div class="btnav"><a href="javascript:void(0);">在线留言</a> </div>
+                     <div class="btnav"><a href="javascript:void(0);">QQ客服</a> </div>
+             </div>
+         </div>
+   </div>
+   <script>
+       $(function(){
+           var wid=$(window).width();
+           $("body").css({width:wid});
+           $(".navbtn").click(function(){
+               var has=$(this).hasClass('active');
+               if(has){
+                     $(this).removeClass('active');
+                     $("body").animate({'margin-left':0},300);
+                     $(".navs").show().animate({'right':'-26%'},300);
+               }else{
+                     $(this).addClass('active');
+                     $("body").animate({'margin-left':'-26%'},300);
+                     $(".navs").show().animate({'right':'0px'},300);
+               }
+           });
+       });
+   </script>
+</body>
+</html>

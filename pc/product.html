@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>神州科技有限公司</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="public/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="public/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+    <script src="public/js/jquery.min.js"></script>
+</head>
+
+<body>
+   <div class="web">
+       <div class="topnav">
+           <div class="container">
+               <div class="langs">
+                   <a href="javascript:void(0);" class="cn">简体中文</a>
+                   <a href="javascript:void(0);" class="en">English</a>
+               </div>
+           </div>
+       </div>
+       <!--header-->
+       <div class="header bc">
+           <div class="container">
+               <div class="logo"><a href="javascript:void(0);"><img src="public/img/logo.png" class="wid100"/> </a></div>
+               <div class="menu">
+                   <div class="row"><a href="index.html">首页</a></div>
+                   <div class="row hasChild">
+                       <a href="aboutus.html">关于我们</a>
+                       <div class="childs">
+                           <div class="child"><a href="aboutus.html">关于我们</a></div>
+                           <div class="child"><a href="history.html">发展里程</a></div>
+                           <div class="child"><a href="service.html">售后服务</a></div>
+                           <div class="child"><a href="customer.html">合作客户</a></div>
+                           <div class="child"><a href="contactus.html">联系我们</a></div>
+
+                       </div>
+                   </div>
+                   <div class="row pdu hasChild">
+                       <a href="product.html" class="active">产品展示</a>
+                       <div class="childs">
+                           <div class="child"><a href="product.html">智能卡读写器</a></div>
+                           <div class="child"><a href="product.html">电子护照阅读器</a></div>
+                           <div class="child"><a href="product.html">HIRSCH超级门禁系统</a></div>
+                           <div class="child"><a href="product.html">ACX商用门禁系统</a></div>
+                       </div>
+                   </div>
+                   <div class="row"><a href="feedback.html">技术支援</a></div>
+               </div>
+           </div>
+       </div>
+       <!--header end-->
+        <!--banner-->
+        <div class="banners">
+             <div class="banner">
+                 <a href="javascript:void(0);"><img src="public/img/prbanner.jpg" class="wid100"/></a>
+             </div>
+        </div>
+        <!--banner end-->
+        <!--main-->
+        <div class="main">
+            <div class="container">
+                <div class="tabs">
+                    <div class="tab active"><a href="javascript:void(0);">智能卡读写器</a> </div>
+                    <div class="tab"><a href="javascript:void(0);">电子护照阅读器</a> </div>
+                    <div class="tab"><a href="javascript:void(0);">HIRSCH超级门禁系统</a> </div>
+                    <div class="tab"><a href="javascript:void(0);">ACX商用门禁系统</a> </div>
+                </div>
+                <div class="productlist">
+                    <div class="product">
+                        <div class="title"><a href="procontent.html">MCR3511	</a></div>
+                        <div class="infor">德国Identiv芯片解决方案</div>
+                        <a href="procontent.html">
+                        <div class="img">
+                            <img src="public/img/pro1.png" class="wid100" /> 
+                            <span class="icon"></span>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <div class="title"><a href="procontent.html">MCR3511	</a></div>
+                        <div class="infor">德国Identiv芯片解决方案</div>
+                        <a href="procontent.html">
+                        <div class="img">
+                            <img src="public/img/pro1.png" class="wid100" />
+                            <span class="icon"></span>
+                        </div>
+                         </a>
+                    </div>
+                    <div class="product">
+                        <div class="title"><a href="procontent.html">MCR3511	</a></div>
+                        <div class="infor">德国Identiv芯片解决方案</div>
+                        <a href="procontent.html">
+                        <div class="img">
+                            <img src="public/img/pro1.png" class="wid100" /> 
+                            <span class="icon"></span>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!--main end-->
+        <!--footer-->
+        <div class="footer bc">
+              <div class="container">
+                     <div class="title">神州科技有限公司</div>
+                     <div class="text">
+                         <p>地址/Add: 深圳市南山区茶光路文光工业区17栋五楼512</p>
+                         <p>电话/Tel: 075586222059</p>
+                         <p>传真/Fax: +86 0755 2643 8165</p>
+                     </div>
+                     <div class="copyright">
+                         <p>©MarkLand Technology ,Ltd  2018. All rights reserved.</p>
+                     </div>
+              </div>
+        </div>
+        <!--footer end-->
+   </div>
+   <script>
+       $(function(){
+           $(".menu .hasChild").each(function(){
+               $(this).hover(function(){
+                   $(this).find(".childs").slideDown();
+               },function(){
+                   $(this).find(".childs").slideUp();
+               });
+           });
+           $(".product").each(function () {
+               $(this).hover(function(){
+                   $(this).find('.icon').fadeIn();
+               },function(){
+                   $(this).find('.icon').fadeOut();
+               });
+           });
+       });
+   </script>
+</body>
+</html>

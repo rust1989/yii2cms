@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/* ------------------------------------全局定义---------------------------------------- */
+/* 将具有默认margin和padding的标记置零，所有标记的margin、padding都在使用时具体定义 */
+*{ margin:0;padding:0;}
+
+
+
+/* 修正IE5.x和IE6的斜体溢出bug */
+* html body{ overflow:visible;}
+* html iframe, * html frame{ overflow:auto;}
+* html frameset{ overflow:hidden;}
+
+/* 常用标签，基本标签默认样式取消，HTML标签，取消基本标签默认样式，防止不同浏览器显示效果不同，text-align:center; 解决不同浏览器居中问题 */
+body{ color:#000;letter-spacing:1px; background:#fff; font:14px/1.4em "微软雅黑","微软正黑体",sans-serif,Arial,Helvetica,sans-serif;}
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,tr{ margin:0; padding:0;}
+input,select{ font-size:12px; vertical-align:middle;}
+
+/* 设置内容左对齐，恢复因BODY设置剧中产生的继承 */
+body div{}
+
+/* 标签属性，textarea,input 强制输入时内容超出时换行 */
+textarea,input{ word-wrap:break-word; word-break:break-all; padding:0px;}
+
+/* 清除ul列表标记的样式，ul列表更多的用在不需要列表前置符号的样式里 */
+li{ list-style-type:none;}
+
+/* 定义图片边框，当图片作为链接内容被填充时，会有默认边框出现，重定义掉 */
+img{ border:0 none;}
+
+/* 定义默认的链接样式，仅仅是作为默认样式提供，可以在各自的实例中覆盖掉 */
+a:link, a:visited{ text-decoration:none;}
+a:hover{ color:#F60; text-decoration:none;}
+
+/* 去掉链接的虚线框 */
+a { outline:none; star:expression(this.onFocus=this.blur());}
+
+/* 定义H系列标签，覆盖H系列标签默认属性 */
+h1{ font-size:24px;font-weight:normal;}
+h2{ font-size:20px;font-weight:normal;}
+h3{ font-size:18px;}
+h4{ font-size:16px;}
+h5{ font-size:14px;}
+h6{ font-size:12px;}
+
+img{vertical-align:top;}
+.shadow{background:rgba(0,0,0,0.8);width:100%;height:100%;top:0px;left:0px;position:fixed;z-index:998;display:none;}
+.loading span{color:#333;font-size:14px;line-height:36px;margin-left:5px;}
+.popup{position:absolute;z-index:9999;min-width:260px;max-with:600px;}
+.loading{min-width:50%;padding:0px 5%;width:50%;margin-left:-25%;top:45%;left:50%;text-align:center;line-height:2.4em;color:#fff;font-size:1.2em;position:fixed;z-index:9999;}
+
+.tip{border:1px solid #fff;border-radius:6px;min-width:30%;margin-left:-15%;z-index:999999;top:30%;left:50%;position:fixed;background:#fff;text-align:center;line-height:2.4em;color:#000;font-size:1em;}
+.tipWraper{position: relative;padding:25px 40px;}
+.tip .close{position: absolute;z-index:999;right:15px;top:15px;}
+.tip .title{color:#a42f2c;font-size:1.6em;}
+.tip .text{margin:20px 0px;line-height:1.4em;}
+.tip .button{color:#fff;margin:0px auto;background:#000;line-height:3em;}
+.tip .button a{color:#fff;}
+.wid100{width:100%;}
+.hide{display:none;opacity:0;}
+.show{display: block;opacity:1;}
+.text-center{text-align:center;}
+.text-right{text-align:right;}
+.clearfix:after {content: " ";display: block;clear: both;height: 0;}
+.clearfix {zoom:1;}
+
+video::-internal-media-controls-download-button {display:none;  }
+video::-webkit-media-controls-enclosure { overflow:hidden;  }
+video::-webkit-media-controls-panel {width: calc(100% + 30px);  }
